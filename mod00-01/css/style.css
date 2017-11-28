@@ -1,5 +1,5 @@
 body {
-	background: url("../img/bg2.jfif");
+	background: url("../img/sw1.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
@@ -42,7 +42,7 @@ h2 {
 	height: 150px;
 	border-radius: 50%;
 	border-style: solid;
-	border-color: white;
+	border-color: black;
 
 
 }
