@@ -24,55 +24,67 @@
 
 		<main>
 			<!-- dashboard -->
-			<section>
-				<h3><i class="fa fa-home"></i> Dashboard</h3>
+			<section id="mainDashboard">
+				<div id="mainDashboardHeader">
+					<h3><i class="fa fa-home"></i> Dashboard</h3>
+				</div>
 
 				<!-- posts -->
-				<div>
-					<div>
+				<div class="dashColumns">
+					<div id="postCircle">
 						<i class="fa fa-file-text-o fa-lg"></i>
+					</div>
+
+					<div class="inline-blocked">
+						<p>5</p>
+						<p>post</p>
 					</div>	
-					<p>5</p>
-					<p>post</p>
 				</div>
 
 				<!-- images -->
-				<div>
-					<div><i class="fa fa-picture"></i></div>
-					<p>13</p>
-					<p>images</p>
+				<div class="dashColumns">
+					<div id="imageCircle">
+						<i class="fa fa-picture-o" fa-lg></i>
+					</div>
+
+					<div class="inline-blocked">
+						<p>13</p>
+						<p>images</p>	
+					</div>
 				</div>
 
 			</section>
 
 			<!-- new post -->
 			<section>
-				<h3>New Post</h3>
+				<h3><i class="fa fa-plus-circle"></i>New Post</h3>
 
 				<form method="" action="">
-					<input type="" name="">
-					<textarea></textarea>
-					<input type="submit" name="" value="Publish">
+					<input id="postTitle" type="" name="" placeholder="Enter your post title">
+					<textarea id="postContent" placeholder="Enter your content here"></textarea>
+					<input type="submit" name="btnPublish" id="btnPublish" class="btn btn-blue" value="Publish">
 				</form>
 			</section>
 
 			<!-- upload image -->
 			<section>
-				<h3>Upload image</h3>
+				<h3><i class="fa fa-cloud-upload"></i>Upload image</h3>
 
-				<div>
-
-					<img src="http://lorempixel.com/200/200">
-					<img src="http://lorempixel.com/200/200">
-					<img src="http://lorempixel.com/200/200">
-					<img src="http://lorempixel.com/200/200">
-					<img src="http://lorempixel.com/200/200">
+				<!-- images -->
+				<div class="img-set-holder">
+					<img class="img-set" src="http://lorempixel.com/200/200" alt="">
+					<img class="img-set" src="http://lorempixel.com/200/200" alt="">
+					<img class="img-set" src="http://lorempixel.com/200/200" alt="">
+					<img class="img-set" src="http://lorempixel.com/200/200" alt="">
+					<img class="img-set" src="http://lorempixel.com/200/200" alt="">
 
 				</div>
 
 				<form method="" action="">
-					<button type="button">Upload</button>
-					<button type="button">Browse</button>
+					<button class="btn btn-green" type="button"><i class="fa fa-upload"></i>Upload</button>
+
+
+					<button class="btn btn-blue" type="button"><i class="fa fa-file-image-o"></i>Browse</button>
 				</form>
 			</section>
 		</main>
@@ -84,6 +96,6 @@
 
 
 	<script src="https://use.fontawesome.com/ceddd94f60.js"></script>
-	
+
 </body>
 </html>
