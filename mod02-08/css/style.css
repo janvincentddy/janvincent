@@ -1,0 +1,170 @@
+/* Css Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	/*To avoid overflow*/
+}
+
+body {
+	background-color: lightgrey;
+}
+
+.wrapper{
+	width: 80%;
+	margin: 0 auto; /* to center the wrapper */
+	background-color: #fff;
+}
+
+div {
+	padding: 20px;
+}
+
+.grandparent {
+	background-color: skyblue;
+	position: fixed;
+	width: inherit; /*refer to wrapper container's width*/ 
+	bottom: 0;
+	/*left: 50px;*/
+}
+
+.parent {
+	background-color: pink;
+	position: relative; /*refer to grandparent container's width*/
+	width: 100% 
+}
+
+p{
+	/*position: static; /* Default */
+	/*margin-left: 50px;*/
+	/*margin-top: -20px;*/
+}
+
+input[name="submit"] {
+	margin-left: 20px;
+}
+
+strong{
+	background-color: yellow;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	
+}
+
+h1{
+	background-color: grey;
+	padding: 10px;
+	position: fixed;
+	z-index: 1; /* will push element on top*/
+	width: inherit;
+}
+
+main.wrapper > p {
+	height: 1000px;
+	background-color: #efefef;
+	position: relative;
+	top: 70px;
+}
+/*
+ *
+ * Page 3 CSS Rules
+ *
+ */
+
+/* div {
+ 	width: 100px;
+ 	height:100px;
+ 	border: 1px solid #000;
+ 	position: absolute;
+ }*/
+
+ .blue{
+ 	background-color: blue;
+ 	top: 20px;
+ 	left: 20px;
+ 	z-index: 1;
+ }
+ .yellow{
+ 	background-color: yellow;
+ 	top: 40px;
+ 	left: 40px;
+ 	z-index: 0;
+ }
+ .orange{
+ 	background-color: orange;
+ 	top: 60px;
+ 	left: 60px;
+ 	z-index: 2;
+ }
+
+ /*
+  *
+  * Page 4 CSS Rules
+  *
+  */
+
+  main.wrapper div {
+  	padding: 0;
+  	margin: 0;
+
+  }
+
+  .menu {
+  	height: 100px;
+  	background-color: #b2d6ff; /* Blue */
+  }
+
+  .sidebar {
+  	height: 300px;
+  	width: 20%;
+  	background-color: #f09a9d; /* Red */
+  	float: left; /* possible value right, none, left */
+  	
+
+  }
+
+  .content {
+  	height: 500px;
+  	background-color: #f5c58e; /* Yellow */
+  	width: 80%;
+  	float: left;
+  }
+
+  .footer {
+  	height: 200px;
+  	background-color: #d6e9fe; /* Light Blue */
+  	clear: both; /* will offset floating effect*/
+  }
+
+  .page {
+  	border: 1px solid red;
+  	border-width: 3px;
+  }
+
+  /*
+  *
+  * Best-way to clear floats
+  *
+  */
+
+  .clear:after {
+  	content: "";
+  	display: block;
+  	clear: both;
+  }
+
+  /*
+   *
+   * Columns
+   *
+   */
+
+   .column {
+   	background-color: #b2d6ff;
+   	height: 160px;
+   	width: 31%;
+   	margin: 20px 1.16%;
+   	border: 1px solid red; /*for testing only*/
+   	float: left;
+   }
