@@ -1,0 +1,51 @@
+/* CSS RESET*/
+	* {
+	margin: 0;
+	padding: 0;
+	/*box-sizing: border-box;*/
+}
+
+strong {
+	display: inline;
+}
+
+input {
+	display: inline;
+}
+
+h1 {
+	display: block;
+	padding: 20px;
+}
+
+
+form {
+	display: block;
+}
+
+blockquote {
+	display: block;
+	padding: 20px;
+}
+
+abbr {
+	display: inline;
+	padding: 10px;
+}
+
+h4 {
+	display: block;
+	padding: 10px;
+}
+
+nav {
+	display: block;
+}
+
+ins {
+	display: inline;
+}
+
+sup {
+	display: inline;
+}
