@@ -1,0 +1,33 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container-fluid {
+	padding-left: 15px;
+	padding-left: 40%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.sidebar-btn {
+
+    padding: 30px 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    display: inline-block;
+}
+
+.navbar-brand {
+	float: left;
+}
+
+
